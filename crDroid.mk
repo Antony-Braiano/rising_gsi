@@ -1,4 +1,5 @@
-$(call inherit-product, vendor/lineage/config/common.mk)
+$(call inherit-product, vendor/rising/config/common.mk)
+$(call inherit-product, vendor/rising/config/version.mk)
 $(call inherit-product, vendor/lineage/config/common_full.mk)
 $(call inherit-product, vendor/lineage/config/BoardConfigSoong.mk)
 $(call inherit-product, vendor/lineage/config/BoardConfigLineage.mk)
@@ -18,3 +19,12 @@ TARGET_BOOT_ANIMATION_RES := 720
 # APN
 PRODUCT_PACKAGES += apns-conf.xml
 
+# RisingOS variables
+RISING_MAINTAINER := by Braia
+
+# Device Identifiers
+PRODUCT_BRAND := generic
+PRODUCT_DEVICE := gsi
+PRODUCT_MANUFACTURER := TrebleDroid
+PRODUCT_MODEL := TrebleUniverse
+PRODUCT_NAME := rising_gsi
